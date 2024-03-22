@@ -19,6 +19,7 @@ use crate::account::ViewKey;
 
 use crate::types::native::RecordCiphertextNative;
 use std::{ops::Deref, str::FromStr};
+use snarkvm_console::program::{Owner, ToFields};
 use wasm_bindgen::prelude::*;
 
 /// Encrypted Aleo record
@@ -64,6 +65,29 @@ impl RecordCiphertext {
     #[wasm_bindgen(js_name = isOwner)]
     pub fn is_owner(&self, view_key: &ViewKey) -> bool {
         self.0.is_owner(view_key)
+    }
+
+    #[wasm_bindgen(js_name = getOwnerX)]
+    pub fn get_owner_x(&self) -> String {
+        let owner = self.0.owner();
+        match owner {
+            Owner::Public(owner) => {
+                owner.to_x_coordinate().to_string() 
+            }
+            Owner::Private(owner) => {
+                owner.to_fields().unwrap().first().unwrap().to_string()
+            }
+        }
+    }
+
+    #[wasm_bindgen(js_name = getNonceX)]
+    pub fn get_nonce_x(&self) -> String {
+        self.0.nonce().to_x_coordinate().to_string()
+    }
+
+    #[wasm_bindgen(js_name = getNonceY)]
+    pub fn get_nonce_y(&self) -> String {
+        self.0.nonce().to_y_coordinate().to_string()
     }
 }
 
