@@ -1,4 +1,4 @@
-import {VerifyingKey} from "@aleohq/wasm";
+import {VerifyingKey} from "./wasm-dist";
 const KEY_STORE = "https://testnet3.parameters.aleo.org/";
 
 const CREDITS_PROGRAM_KEYS = {
@@ -194,7 +194,7 @@ export {
     ViewKey,
     initThreadPool,
     verifyFunctionExecution,
-} from "@aleohq/wasm";
+} from "./wasm-dist";
 
 export { initializeWasm };
 
