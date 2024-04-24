@@ -2539,7 +2539,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@kryha-labs/aleo-sdk-canary@workspace:sdk"
   dependencies:
-    "@kryha-labs/aleo-wasm": "npm:^0.0.1"
+    "@kryha-labs/aleo-wasm-canary": "npm:^0.0.1"
     "@types/jest": "npm:^29.5.5"
     "@types/mime": "npm:^3.0.1"
     "@typescript-eslint/eslint-plugin": "npm:^5.41.0"
@@ -2564,7 +2564,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kryha-labs/aleo-wasm-canary@workspace:wasm":
+"@kryha-labs/aleo-wasm-canary@npm:^0.0.1, @kryha-labs/aleo-wasm-canary@workspace:wasm":
   version: 0.0.0-use.local
   resolution: "@kryha-labs/aleo-wasm-canary@workspace:wasm"
   dependencies:
@@ -2574,13 +2574,6 @@ __metadata:
     rollup: "npm:^3.27.2"
   languageName: unknown
   linkType: soft
-
-"@kryha-labs/aleo-wasm@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@kryha-labs/aleo-wasm@npm:0.0.1"
-  checksum: 10/5686b651bd2e97afa84d835105681f5983daef82cdc2f81457fea1ce8ef08b63a700cce9503668e4e765e57c6015ead40e97e1bcff3ce4ce93f419bc95163152
-  languageName: node
-  linkType: hard
 
 "@leichtgewicht/ip-codec@npm:^2.0.1":
   version: 2.0.4

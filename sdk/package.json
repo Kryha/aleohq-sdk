@@ -42,7 +42,7 @@
     },
     "homepage": "https://github.com/AleoHQ/sdk#readme",
     "dependencies": {
-        "@kryha-labs/aleo-wasm": "^0.0.1",
+        "@kryha-labs/aleo-wasm-canary": "^0.0.1",
         "comlink": "^4.4.1",
         "mime": "^3.0.0",
         "sync-request": "^6.1.0"
