@@ -20,7 +20,7 @@ export default {
         "mime/lite.js",
         "sync-request",
         "comlink",
-        "@aleohq/wasm",
+        "@kryha-labs/aleo-sdk",
     ],
     plugins: [
         typescript({

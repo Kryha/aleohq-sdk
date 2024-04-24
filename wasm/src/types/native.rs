@@ -17,7 +17,7 @@
 pub use snarkvm_circuit_network::{Aleo, AleoV0};
 pub use snarkvm_console::{
     account::{Address, PrivateKey, Signature, ViewKey},
-    network::{Network, Testnet3},
+    network::{MainnetV0, Network},
     program::{
         Ciphertext,
         Entry,
@@ -32,17 +32,16 @@ pub use snarkvm_console::{
         Response,
         ValueType,
     },
-    types::Field,
+    types::{Field, Group},
 };
-pub use snarkvm_ledger_block::{Execution, Transaction};
+pub use snarkvm_ledger_block::{Deployment, Execution, Transaction, Transition};
 pub use snarkvm_ledger_query::Query;
 pub use snarkvm_ledger_store::helpers::memory::BlockMemory;
 pub use snarkvm_synthesizer::{
-    cost_in_microcredits,
-    deployment_cost,
     snark::{ProvingKey, VerifyingKey},
     Process,
     Program,
+    Trace,
     VM,
 };
 pub use snarkvm_wasm::{
@@ -61,7 +60,7 @@ pub type ViewKeyNative = ViewKey<CurrentNetwork>;
 pub type FieldNative = Field<CurrentNetwork>;
 
 // Network types
-pub type CurrentNetwork = Testnet3;
+pub type CurrentNetwork = MainnetV0;
 pub type CurrentAleo = AleoV0;
 
 // Record types
