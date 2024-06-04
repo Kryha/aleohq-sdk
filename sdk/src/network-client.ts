@@ -30,7 +30,7 @@ class AleoNetworkClient {
     account: Account | undefined;
 
     constructor(host: string) {
-        this.host = host + "/mainnet";
+        this.host = host + "/canary";
     }
 
     /**
@@ -62,7 +62,7 @@ class AleoNetworkClient {
      * @param host
      */
     setHost(host: string) {
-        this.host = host + "/mainnet";
+        this.host = host + "/canary";
     }
 
     async fetchData<Type>(url = "/"): Promise<Type> {
