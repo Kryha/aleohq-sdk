@@ -1,6 +1,6 @@
 {
-  "name": "@kryha-labs/aleo-wasm",
-  "version": "0.0.2",
+  "name": "@kryha-labs/aleo-wasm-testnet",
+  "version": "0.0.1",
   "description": "Wasm build for the SDK",
   "collaborators": [
     "The Aleo Team <hello@aleo.org>"
