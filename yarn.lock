@@ -2861,11 +2861,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kryha-labs/aleo-sdk@workspace:sdk":
+"@kryha-labs/aleo-sdk-canary@workspace:sdk":
   version: 0.0.0-use.local
-  resolution: "@kryha-labs/aleo-sdk@workspace:sdk"
+  resolution: "@kryha-labs/aleo-sdk-canary@workspace:sdk"
   dependencies:
-    "@kryha-labs/aleo-wasm": "npm:^0.0.2"
+    "@kryha-labs/aleo-wasm-canary": "npm:0.0.6"
     "@rollup/plugin-replace": "npm:^5.0.5"
     "@types/jest": "npm:^29.5.5"
     "@types/mime": "npm:^3.0.1"
@@ -2891,9 +2891,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kryha-labs/aleo-wasm@npm:^0.0.2, @kryha-labs/aleo-wasm@workspace:wasm":
+"@kryha-labs/aleo-wasm-canary@npm:0.0.6, @kryha-labs/aleo-wasm-canary@workspace:wasm":
   version: 0.0.0-use.local
-  resolution: "@kryha-labs/aleo-wasm@workspace:wasm"
+  resolution: "@kryha-labs/aleo-wasm-canary@workspace:wasm"
   dependencies:
     "@wasm-tool/rollup-plugin-rust": "npm:^2.4.2"
     cpr: "npm:^3.0.1"

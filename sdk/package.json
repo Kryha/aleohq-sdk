@@ -1,6 +1,6 @@
 {
-    "name": "@kryha-labs/aleo-sdk",
-    "version": "0.0.2",
+    "name": "@kryha-labs/aleo-sdk-canary",
+    "version": "0.0.6",
     "description": "A Software Development Kit (SDK) for Zero-Knowledge Transactions",
     "collaborators": [
         "The Aleo Team <hello@aleo.org>"
@@ -42,7 +42,7 @@
     },
     "homepage": "https://github.com/AleoHQ/sdk#readme",
     "dependencies": {
-        "@kryha-labs/aleo-wasm": "^0.0.2",
+        "@kryha-labs/aleo-wasm-canary": "0.0.6",
         "comlink": "^4.4.1",
         "mime": "^3.0.0",
         "sync-request": "^6.1.0"
